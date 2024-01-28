@@ -1,10 +1,16 @@
 // Gauge chart
 function gaugeChart(name){
     
+    // Fetch the data
     d3.json(url).then(function (data){
+
+        // Save metadata as a variable
         let metadata = data.metadata;
+
+        // Look for the data for a specific id
         let thisSample = metadata.find(sample => sample.id.toString() === name);
 
+        // Define gauge chart data
         let gaugeData = [{ 
             domain: { x: [0, 10], y: [0, 10] },
             value: thisSample.wfreq,
@@ -28,7 +34,7 @@ function gaugeChart(name){
             }
         }];
 
+        // Plot gauge chart
         Plotly.newPlot('gauge', gaugeData);
-
     });
 };
