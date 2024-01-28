@@ -94,11 +94,7 @@ function displayMeta (name){
     metaPannel.html("");
 
     metadata = data.metadata;
-    console.log("metadata", metadata)
-    console.log("metadata 1", metadata[0])
-    console.log("metadata 1 id", metadata[0].id)
-    console.log(name)
-
+   
     let thisMeta = metadata.find(meta => meta.id.toString() === name);
     console.log(thisMeta);
 
