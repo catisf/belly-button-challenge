@@ -28,10 +28,12 @@ The dashboard includes:
 ## 3. Repository structure
 This repository contains:
 - A [samples.json](https://github.com/catisf/belly-button-challenge/blob/main/samples.json) file, which stores all the data. Not however that this file is just for reference, and it is not called in any of the scripts. The data used to build the dashboard is fetched using the [D3 library](https://d3js.org/)
-- An [index.html] file with html code to display the dashboard
+- An [index.html](https://github.com/catisf/belly-button-challenge/blob/main/index.html) file with html code to display the dashboard
 - [static/js](https://github.com/catisf/belly-button-challenge/tree/main/static/js) folder containing app.js and bonus.js files. [app.js](https://github.com/catisf/belly-button-challenge/blob/main/static/js/app.js) file initiates the dashboard, sets up the dropdown menu and plots (and updates) all charts, as well as displaying the metadata. [bonus.js](https://github.com/catisf/belly-button-challenge/blob/main/static/js/bonus.js) contains the function to plot the gauge chart. 
 
 ## 4. Set up and execution
-
+1. Clone the repository to your local computer: in your Terminal type `git clone https://github.com/catisf/belly-button-challenge.git`
+2. Open index.html in a web browser
 
 ## 5. Data source
+Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links to an external site.
