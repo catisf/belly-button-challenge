@@ -34,7 +34,12 @@ function gaugeChart(name){
             }
         }];
 
+        let gaugeLayout = {
+            height: 500,
+            width: 500
+        }
+
         // Plot gauge chart
-        Plotly.newPlot('gauge', gaugeData);
+        Plotly.newPlot('gauge', gaugeData,gaugeLayout);
     });
 };

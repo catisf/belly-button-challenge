@@ -1,6 +1,7 @@
 // Read data from the URL
 const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
 
+let hasStarted = false
 
 // Initialise the dashboard with the first subject
 function initDashboard(){
@@ -18,7 +19,7 @@ function initDashboard(){
         });
        
         // initialise dashboard with first subject
-        initPlots(names[0]);
+        plotCharts(names[0]);
         displayMeta(names[0]);
         gaugeChart(names[0]);
     });   
@@ -26,7 +27,7 @@ function initDashboard(){
 
 
 // Create bar and bubble charts
-function initPlots(name){
+function plotCharts(name){
     
     // Fetch the data
     d3.json(url).then(function (data){
@@ -38,7 +39,9 @@ function initPlots(name){
     let thisSample = samples.find(sample => sample.id === name)
 
     // Define data and layout for bar plot
-    let barData = [{
+    let barData = [];
+    
+    barData = [{
         x: thisSample.sample_values.slice(0,10).reverse(),
         y: thisSample.otu_ids.slice(0,10).map(id => `OTU ${id}`).reverse(),
         text: thisSample.otu_labels.slice(0,10).reverse(),
@@ -47,9 +50,15 @@ function initPlots(name){
     }];
 
     let barLayout = {
-        title: `Top 10 OTUs for subject ${thisSample.id}`,
-        xaxis: {title: "Sample values"},
-        yaxis: {title: "OTU ids"}
+        title: {text: `Top 10 OTUs for subject ${thisSample.id}`, 
+                font: {size:20}},
+        xaxis: {title: "Sample values",
+                titlefont: {size: 18}},
+        yaxis: {title: "OTU ids",
+                titlefont: {size:18}},
+        width: 500,
+        height: 500,
+        margin: {l: 100},
     };
 
     // Define data and layout for bubble chart
@@ -66,9 +75,13 @@ function initPlots(name){
       }];
     
     let bubbleLayout = {
-        title: `Sample ${thisSample.id}`,
-        xaxis: {title: "OTU ids"},
-        yaxis: {title: "Sample values"}
+        title: {text: "Bacteria per sample",
+                font: {size: 20},
+                y: 0.85},
+        xaxis: {title: "OTU ids",
+                titlefont: {size: 18}},
+        yaxis: {title: "Sample values",
+                titlefont: {size: 18}},
     };
 
     // Plot both charts
@@ -112,7 +125,7 @@ function optionChanged(name) {
     // console.log(name); 
 
     // Plot charts and display metadata for that id
-    initPlots(name);
+    plotCharts(name);
     displayMeta (name);
     gaugeChart(name);
 };
