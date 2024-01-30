@@ -9,7 +9,7 @@
 5. [Data source](https://github.com/catisf/belly-button-challenge?tab=readme-ov-file#5-data-source)
 
 ## 1. Overview
-The main aim of this assignment is to build an interactive dashboard, to explore the [Belly Button Biodiversity dataset](https://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+The main aim of this assignment was to build an interactive dashboard, to explore the [Belly Button Biodiversity dataset](https://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
 The dashboard includes:
 - A horizontal bar chart with a dropdown menu to display the top 10 OTUs (operational taxonomic units - or microbial species) found in the selected individual
