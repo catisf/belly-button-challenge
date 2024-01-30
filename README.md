@@ -18,16 +18,16 @@ The dashboard includes:
 - A gauge chart (advanced challenge) plotting the weekly washing frequency of the selected individual.
 
 ## 2. Deployment
-### The dashboard is deployed to GitHub Pages. You can find [here](https://catisf.github.io/belly-button-challenge/).
+### The dashboard is deployed to GitHub Pages. You can find it [here](https://catisf.github.io/belly-button-challenge/).
 
 <p align="center">
-  <img src = "https://github.com/catisf/Crowdfunding_ETL/blob/main/sql_database/crowdfunding_erd.png" height = "75%" width = "75%">
+  <img src = "https://github.com/catisf/belly-button-challenge/blob/main/dashboard.png" height = "75%" width = "75%">
 </p>
 <h6 align="center">Fig. 1 - Screenshot of the interactive dashboard</h6>
 
 ## 3. Repository structure
 This repository contains:
-- A [samples.json](https://github.com/catisf/belly-button-challenge/blob/main/samples.json) file, which stores all the data. Not however that this file is just for reference, and it is not called in any of the scripts. The data used to build the dashboard is fetched using the [D3 library](https://d3js.org/)
+- A [`samples.json`](https://github.com/catisf/belly-button-challenge/blob/main/samples.json) file, which stores all the data. Not however that this file is just for reference, and it is not called in any of the scripts. The data used to build the dashboard is fetched using the [D3 library](https://d3js.org/)
 - An [index.html](https://github.com/catisf/belly-button-challenge/blob/main/index.html) file with html code to display the dashboard
 - [static/js](https://github.com/catisf/belly-button-challenge/tree/main/static/js) folder containing app.js and bonus.js files. [app.js](https://github.com/catisf/belly-button-challenge/blob/main/static/js/app.js) file initiates the dashboard, sets up the dropdown menu and plots (and updates) all charts, as well as displaying the metadata. [bonus.js](https://github.com/catisf/belly-button-challenge/blob/main/static/js/bonus.js) contains the function to plot the gauge chart. 
 
