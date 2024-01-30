@@ -29,7 +29,7 @@ The dashboard includes:
 This repository contains:
 - [`samples.json`](https://github.com/catisf/belly-button-challenge/blob/main/samples.json) stores all the data. Note however that this file is just for reference, and it is not called in any of the scripts. The data used to build the dashboard is fetched using the [D3 library](https://d3js.org/)
 - [`index.html`](https://github.com/catisf/belly-button-challenge/blob/main/index.html) has the html code to display the dashboard
-- ['static/js'](https://github.com/catisf/belly-button-challenge/tree/main/static/js) contains the 'app.js' and 'bonus.js' files. ['app.js'](https://github.com/catisf/belly-button-challenge/blob/main/static/js/app.js) file initiates the dashboard, sets up the dropdown menu and plots (and updates) all charts, as well as displaying the metadata. ['bonus.js'](https://github.com/catisf/belly-button-challenge/blob/main/static/js/bonus.js) contains the function used to plot the gauge chart. 
+- [`static/js`](https://github.com/catisf/belly-button-challenge/tree/main/static/js) contains the 'app.js' and 'bonus.js' files. ['app.js'](https://github.com/catisf/belly-button-challenge/blob/main/static/js/app.js) file initiates the dashboard, sets up the dropdown menu and plots (and updates) all charts, as well as displaying the metadata. ['bonus.js'](https://github.com/catisf/belly-button-challenge/blob/main/static/js/bonus.js) contains the function used to plot the gauge chart. 
 
 ## 4. Set up and execution
 1. Clone the repository to your local computer: in your Terminal type `git clone https://github.com/catisf/belly-button-challenge.git`
