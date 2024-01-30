@@ -33,7 +33,7 @@ This repository contains:
 
 ## 4. Set up and execution
 1. Clone the repository to your local computer: in your Terminal type `git clone https://github.com/catisf/belly-button-challenge.git`
-2. Open 'index.html' in your favourite web browser
+2. Open `index.html` in your favourite web browser
 3. Select different individuals from the dropdown menu to see the different samples
 
 ## 5. Data source
